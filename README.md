@@ -16,20 +16,20 @@
     * 전체 플레이리스트는 [여기서](https://www.youtube.com/playlist?list=PL3vETZ0d3GBwYfllUha6tVKo9U2Fsugy1)
 
 ### CHAPTER 4. 머신러닝에 필요한 수학의 기본
-* 4장 164p 부분 코드를 아래와 같이 수정해야 오류가 발생하지 않습니다.
-    
+* 4.7.9(164p) 코드를 아래와 같이 수정해야 오류가 발생하지 않습니다. (np.reshape의 마지막 파라미터를 1에서 'F'로 변경)
+* 참고한 출처는 [이곳](https://qiita.com/hiroshim021/items/535489b965b022d109c7) 입니다.
+* 실습 동영상은 [여기를](https://youtu.be/7_0AyhhUWVg) 참고하세요. (등고선: 23분 50초, 3D: 26분)
 
-#### [등고선 표시]
-##### 수정 전
-    * x = np.c_[np.reshape(xx0, nx * xn, 1), np.reshape(xx1, xn * xn, 1)]
-##### 수정 후
-    * x = np.c_[np.reshape(xx0, nx * xn, 'F'), np.reshape(xx1, xn * xn, 'F')]
+#### # 등고선 표시
+###### [수정 전]
+    x = np.c_[np.reshape(xx0, nx * xn, 1), np.reshape(xx1, xn * xn, 1)]
+##### [수정 후]
+    x = np.c_[np.reshape(xx0, nx * xn, 'F'), np.reshape(xx1, xn * xn, 'F')]
 
-#### [3D 표시]
-##### 수정 전
-    * x = np.c_[np.reshape(xx0, nx * xn, 1), np.reshape(xx1, xn * xn, 1)]
-##### 수정 후
-    * x = np.c_[np.reshape(xx0, nx * xn, 'F'), np.reshape(xx1, xn * xn, 'F')]
+#### # 3D 표시
+###### [수정 전]
+    x = np.c_[np.reshape(xx0, nx * xn, 1), np.reshape(xx1, xn * xn, 1)]
+##### [수정 후]
+    x = np.c_[np.reshape(xx0, nx * xn, 'F'), np.reshape(xx1, xn * xn, 'F')]
 
-* 참조: https://qiita.com/hiroshim021/items/535489b965b022d109c7
 
