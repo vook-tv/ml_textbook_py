@@ -1,4 +1,11 @@
-## [책따망 트러블 슈팅] 파이썬으로 배우는 머신러닝의 교과서
+# [책따망] 파이썬으로 배우는 머신러닝의 교과서
+
+## 1. YouTube 실습 동영상 플레이리스트
+* Google Colab 실습 영상: [Chapter 1 ~ 4](https://www.youtube.com/playlist?list=PL3vETZ0d3GBwkKbCZlYB2Enbp96IOmonq) / [Chapter 5 ~ 9](https://www.youtube.com/playlist?list=PL3vETZ0d3GByvSUHfC49Tp38hOVDpznD1)
+* Jupyter Notebook 설치와 트러블 슈팅 영상: [GPU 없을 때 발생하는 문제](https://www.youtube.com/playlist?list=PL3vETZ0d3GBz1p69OQn7dmO04yBIa0iXz) / [VC++ Redistributable 미설치 문제](https://www.youtube.com/playlist?list=PL3vETZ0d3GBwYfllUha6tVKo9U2Fsugy1)
+
+## 2. 트러블 슈팅
+
 아래 내용들은 책에 수록된 실습 코드들의 트러블 슈팅입니다.
 요약하면 다음과 같습니다.
 * NVIDIA GPU가 없을 경우 책의 방법대로는 tensorflow 설치가 불가능한 문제(cudart64_101.dll)
@@ -109,6 +116,3 @@
     x = np.c_[np.reshape(xx0, xn * xn, 'F'), np.reshape(xx1, xn * xn, 'F')]
 
 * 9.3 참고 동영상은 [여기서](https://youtu.be/2yqQ5YA5-9U)
-
-
-
